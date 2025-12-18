@@ -1,7 +1,7 @@
 # JQuery My Context Menu
 
 > Original Repos:   
-> - JQuery My Context Menu: https://github.com/a19836/jquerymycontextmenu/   
+> - JQuery My Context Menu: https://github.com/a19836/jquery-context-menu/   
 > - Bloxtor: https://github.com/a19836/bloxtor/
 
 ## Overview
